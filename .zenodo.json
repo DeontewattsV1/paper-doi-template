@@ -1,0 +1,15 @@
+{
+  "title": "Paper DOI Template",
+  "description": "Template repository for one scientific manuscript. A GitHub Release plus the Zenodo GitHub integration mints a versioned DOI. Indexed by dummy-decoy-scientific-hub.",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "creators": [
+    {
+      "name": "Watts, Deonte",
+      "affiliation": "GoodShyt Group"
+    }
+  ],
+  "keywords": ["preprint", "open science", "DOI template"]
+}

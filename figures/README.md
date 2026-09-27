@@ -1,0 +1,3 @@
+# figures/
+
+Publication figures only.

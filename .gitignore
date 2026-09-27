@@ -1,0 +1,11 @@
+.DS_Store
+.env
+**/*.secret
+__pycache__/
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz

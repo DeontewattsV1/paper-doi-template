@@ -1,0 +1,14 @@
+name: release-notes
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+jobs:
+  note:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Remind operator to harvest DOI
+        run: |
+          echo "If Zenodo is enabled on this public repository, a concept DOI and version DOI will appear shortly."
+          echo "Paste both identifiers into README.md, CITATION.cff, and dummy-decoy-scientific-hub/papers/catalog.json."

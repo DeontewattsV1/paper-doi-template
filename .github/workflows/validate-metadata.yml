@@ -1,0 +1,18 @@
+name: validate-metadata
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Required files
+        run: |
+          test -f CITATION.cff
+          test -f .zenodo.json
+          test -f README.md
+          test -d manuscript
+      - name: JSON syntax
+        run: python -m json.tool .zenodo.json > /dev/null

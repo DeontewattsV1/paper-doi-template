@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this manuscript or its artifacts, cite it as below."
+title: "Paper DOI Template"
+type: software
+authors:
+  - family-names: Watts
+    given-names: Deonte
+    affiliation: GoodShyt Group
+repository-code: "https://github.com/DeontewattsV1/paper-doi-template"
+url: "https://github.com/DeontewattsV1/paper-doi-template"
+license: CC-BY-4.0
+keywords:
+  - preprint
+  - zenodo
+  - doi
+version: "1.0.0"
+date-released: "2026-09-27"
