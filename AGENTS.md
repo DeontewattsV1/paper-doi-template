@@ -11,7 +11,7 @@ For work in this repository, follow this order of authority:
 
 ## Review verification
 
-Verify findings against current evidence before changing code. Never weaken tests, security controls, lint, type checks, or required review gates. Resolve review threads only when their findings are fixed, already fixed, or verified false positive.
+Verify findings against current evidence before changing code. After each change, run the repository-required verification, including applicable evidence, tests, build, lint, type checks, and security checks; report any unavailable or failing gate. Never weaken tests, security controls, lint, type checks, or required review gates. Resolve review threads only when their findings are fixed, already fixed, or verified false positive.
 
 ## Git and pull requests
 
