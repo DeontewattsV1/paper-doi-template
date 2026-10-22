@@ -4,9 +4,19 @@
 [![Release](https://img.shields.io/github/v/release/DeontewattsV1/paper-doi-template?include_prereleases&style=flat-square)](https://github.com/DeontewattsV1/paper-doi-template/releases)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey?style=flat-square)](LICENSE)
 [![Hub](https://img.shields.io/badge/catalog-dummy%20decoy%20hub-0B3D91?style=flat-square)](https://github.com/DeontewattsV1/dummy-decoy-scientific-hub)
-[![ORCID](https://img.shields.io/badge/ORCID-Deonte%20Watts-A6CE39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/)
+[![ORCID](https://img.shields.io/badge/ORCID-Deonte%20Watts-A6CE39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0009-0005-8586-3650)
 
 One manuscript. One repository. One Zenodo DOI family.
+
+## Author identity and research directory
+
+- **Author:** Deonté O'dell Watts, Independent Researcher, GoodShyt Group Inc.
+- **ORCID:** https://orcid.org/0009-0005-8586-3650
+- **Researcher webpage:** https://deonte-watts-ietf-identity.vercel.app/
+- **IETF-compatible Linkset (RFC 9264):** https://deonte-watts-ietf-identity.vercel.app/linkset-research.json
+- **Schema.org JSON-LD:** https://deonte-watts-ietf-identity.vercel.app/author.jsonld
+
+The linked professional profiles are author-declared; they are not verified account-ownership or IETF endorsements. The public research Linkset excludes payment profiles. This template is not an Internet-Draft and publishing metadata here does not authorize an IETF submission.
 
 Use this repository as the **GitHub template** for every scientific paper that should receive its own DOI. The public index lives in [dummy-decoy-scientific-hub](https://github.com/DeontewattsV1/dummy-decoy-scientific-hub) so this pattern does not store twenty manuscripts in one tree.
 
