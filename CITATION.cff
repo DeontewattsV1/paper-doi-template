@@ -4,8 +4,9 @@ title: "Paper DOI Template"
 type: software
 authors:
   - family-names: Watts
-    given-names: Deonte
-    affiliation: GoodShyt Group
+    given-names: "Deonté O'dell"
+    orcid: "https://orcid.org/0009-0005-8586-3650"
+    affiliation: "GoodShyt Group Inc."
 repository-code: "https://github.com/DeontewattsV1/paper-doi-template"
 url: "https://github.com/DeontewattsV1/paper-doi-template"
 license: CC-BY-4.0
