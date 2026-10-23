@@ -1,7 +1,11 @@
 .DS_Store
 .env
 **/*.secret
+node_modules/
+build/
 __pycache__/
+*.pyc
+*.pyo
 *.aux
 *.bbl
 *.blg

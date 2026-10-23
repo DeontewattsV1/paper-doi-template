@@ -3,16 +3,41 @@ on:
   push:
   pull_request:
   workflow_dispatch:
+permissions:
+  contents: read
 jobs:
   metadata:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Required files
         run: |
           test -f CITATION.cff
           test -f .zenodo.json
           test -f README.md
+          test -f LICENSE
+          test -f SECURITY.md
           test -d manuscript
+          test -d figures
+          test -d data
+          test -d supplemental
+          grep -q '^cff-version:' CITATION.cff
+          grep -q '^license: CC-BY-4.0' CITATION.cff
       - name: JSON syntax
         run: python -m json.tool .zenodo.json > /dev/null
+      - name: Placeholder DOI stays labeled
+        run: |
+          python3 - << 'PY'
+          from pathlib import Path
+          readme = Path("README.md").read_text(encoding="utf-8")
+          if "10.5281/zenodo.CONCEPT" in readme:
+              if "placeholder" not in readme.lower():
+                  raise SystemExit("CONCEPT DOI example must be labeled as a placeholder")
+          print("placeholder DOI check ok")
+          PY
+      - name: Workflows declare triggers and jobs
+        run: |
+          for f in .github/workflows/*.yml; do
+            grep -q '^on:' "$f" || { echo "missing on: in $f"; exit 1; }
+            grep -q '^jobs:' "$f" || { echo "missing jobs: in $f"; exit 1; }
+          done
