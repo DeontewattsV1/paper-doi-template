@@ -9,7 +9,7 @@ jobs:
   note:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Remind operator to harvest DOI
         run: |
           echo "If Zenodo is enabled on this public repository, a concept DOI and version DOI will appear shortly."
